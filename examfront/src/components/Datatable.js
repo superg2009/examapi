@@ -26,8 +26,7 @@ function Datatable(){
       
   return (
     <div className="container">
-    <h2>Exams This Term</h2>
-   <table >
+   <table className="styledtable">
        <thead>
        <tr>
        <th>Course</th>
