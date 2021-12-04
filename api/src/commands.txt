@@ -1,5 +1,9 @@
-#!/bin/bash
-
+# run first
 export FLASK_APP=src/app.py
 pipenv shell
+
+run after 
 gunicorn -b 0.0.0.0:5000 wsgi:app
+
+
+also pipenv lock -r > requirements.txt
